@@ -1,0 +1,65 @@
+*{
+    background-color:#282828;
+    color: white;
+}
+
+.nav{
+    background-color: #535353;
+    padding-top: 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+ };
+.canvas1{
+    margin-left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ #containerCanvas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .input1{
+     display:none;
+ }
+#containerSelectores{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 20px;
+    padding-block-end: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+ #exampleFormControlSelect1{
+    margin-right: 20px;
+ }
+
+#containerSlider{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    order: 3;
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#containerCanvas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+.btn.btn-dark{
+    margin-left: 30px;
+}

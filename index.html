@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    
+    <!-- BOOSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png"/>
+    <title>Pintando</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <button type="button" class="btn btn-dark" id="nuevoLienzo">NuevoLienzo</button>   
+        <button type="button" class="btn btn-dark" onclick="document.querySelector('.input1').click();">Cargar</button>     
+        <a class="btn btn-dark" href="" download="myImage.jpg" id="descargar">Descargar</a>
+    </nav>
+    <form id="containerSelectores">
+        <div id= "filtros">
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option value="" disabled selected hidden>Aplicar Filtro</option> 
+            <option value="negativo">Negativo</option>
+            <option value="binarizacion">Binarizacion</option>
+            <option value="sepia">Sepia</option>
+            <option value="escalaGrises">Escala de grises</option>
+            <option value="blur">Blur</option>
+            <option value="nitidez">Nitidez</option>
+            <option value="deteccionDeBorde">Deteccion de Borde</option>
+          </select>
+        </div>
+        <div class="form-group" id="barraDibujo">
+            <select class="form-control" id="herramientaDibujo">
+              <option value="" disabled selected hidden>Herramientas de dibujo</option> 
+              <option value="lapiz">Lápiz</option>
+              <option value="borrador">Borrador</option>
+            </select>
+        </div>
+        <div id="containerSlider">
+            <h4>Tamaño: <span id="slider"> </span></h4>
+            <input type="range" id="tamanioPincel" min="5" max="50" step="5"/>
+        </div>
+    </form>
+    <div id="containerCanvas">
+        <input class="input1" type="file" accept="image/png, .jpeg, .jpg"/>
+        <canvas class="canvas1" width="1200" height="800" style="border: #000 solid 3px;"></canvas>
+    </div>
+    <p id="coordenadas"></p>
+    <script type="text/javascript" src="main.js"></script>
+    <footer></footer>
+</body>
+
+</html>
